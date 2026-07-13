@@ -57,35 +57,7 @@ that off to the planner to generate a step-by-step treatment plan.
 └── README.md
 ```
 
-## Setup (Ubuntu)
 
-```bash
-# 1. Prerequisites
-sudo apt update
-sudo apt install -y python3 python3-pip python3-venv git
-
-# 2. Clone (already done if you're reading this from the cloned folder)
-git clone https://github.com/sirrom/Capstone-Project-Intelligent-Healthcare-Diagnostic-Assistant.git
-cd Capstone-Project-Intelligent-Healthcare-Diagnostic-Assistant
-
-# 3. Virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# 4. Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# 5. Run the full system on 5 demo patients
-python3 app.py
-
-# 6. Run the full evaluation suite (metrics + charts, saved to reports/)
-python3 evaluation/evaluate_system.py
-
-# 7. (Optional) Jupyter for exploring modules interactively
-pip install jupyter
-jupyter notebook
-```
 
 ## Testing an individual module
 
@@ -137,13 +109,4 @@ Classifier (Gradient Boosting) is the strongest, at ~92% accuracy.
   aren't used anywhere in this codebase — the Bayesian and fuzzy-logic
   modules are hand-implemented with numpy instead.
 
-## Deliverables checklist
 
-- [x] All 7 modules complete and integrated
-- [x] `app.py` runs end-to-end without errors
-- [x] Evaluation metrics computed for all ML modules
-- [x] Confusion matrices generated for each classifier
-- [x] Module comparison bar chart generated
-- [x] At least 5 test patients diagnosed by the full system
-- [ ] Final report PDF in `reports/` folder
-- [ ] 10-minute live demo prepared
